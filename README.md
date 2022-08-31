@@ -43,7 +43,7 @@ If you have suggestions or issues, please email me at [reinschmidtmeaghan@gmail.
 - [X] Add image info to galleryItems array
 
 ### Functionality
-- [ ] 
+- [X] Create a GET function and display images to DOM
 
 
 
