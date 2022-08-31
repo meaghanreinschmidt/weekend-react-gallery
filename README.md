@@ -38,7 +38,7 @@ If you have suggestions or issues, please email me at [reinschmidtmeaghan@gmail.
 
 ### Setup
 - [X] Set up base README
-- [ ] `npm install`, `npm run server`, `npm run client`
+- [X] `npm install`, `npm run server`, `npm run client`
 - [ ] Add sample photos to server.js
 
 
