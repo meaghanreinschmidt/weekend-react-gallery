@@ -40,6 +40,10 @@ If you have suggestions or issues, please email me at [reinschmidtmeaghan@gmail.
 - [X] Set up base README
 - [X] `npm install`, `npm run server`, `npm run client`
 - [X] Add sample photos to Images folder
+- [X] Add image info to galleryItems array
+
+### Functionality
+- [ ] 
 
 
 
