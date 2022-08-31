@@ -39,7 +39,7 @@ If you have suggestions or issues, please email me at [reinschmidtmeaghan@gmail.
 ### Setup
 - [X] Set up base README
 - [X] `npm install`, `npm run server`, `npm run client`
-- [ ] Add sample photos to server.js
+- [X] Add sample photos to Images folder
 
 
 
