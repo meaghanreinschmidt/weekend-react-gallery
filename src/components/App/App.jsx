@@ -1,6 +1,8 @@
 import axios from 'axios';
 import React, {useState, useEffect } from 'react';
 import './App.css';
+import Header from '../Header/Header';
+import GalleryList from '../GalleryList/GalleryList';
 
 function App() {
   let [galleryArray, setGalleryArray] = useState([]);
@@ -27,11 +29,13 @@ function App() {
 
     return (
       <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Gallery of My Life</h1>
-        </header>
+        <Header />
         <div className="row">
-          {galleryArray.map((galleryItem) => {
+        <GalleryList 
+          galleryArray={galleryArray}
+          galleryItem={galleryItem}
+          galleryItems={galleryItems}
+        />
             return (
               <div>
                 <img key={galleryItem.id} src={galleryItem.path}></img>
@@ -40,9 +44,7 @@ function App() {
                   <i className="fa fa-heart-o"></i>
                 </button>
               </div>
-            )
-          })
-          }
+            )    
         </div>
       </div>
     );
