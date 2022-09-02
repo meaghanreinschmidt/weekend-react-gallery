@@ -1,14 +1,15 @@
 import React from 'react';
 import GalleryItem from '../GalleryItem/GalleryItem';
 
-function GalleryList({galleryArray}) {
-    galleryArray.map((galleryItem) => {
-        return (
-            <div>
-                <GalleryItem galleryItem={galleryItem}/>
-            </div>
-        )
-    })
+function GalleryList({ galleryArray }) {
+    return (
+        galleryArray.map(galleryItem => {
+            return <GalleryItem
+                        key={galleryItem.id}
+                        galleryItem={galleryItem}
+                    />
+        })
+    )
 }
 
 export default GalleryList;

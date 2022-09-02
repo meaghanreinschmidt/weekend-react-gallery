@@ -3,6 +3,7 @@ import React, {useState, useEffect } from 'react';
 import './App.css';
 import Header from '../Header/Header';
 import GalleryList from '../GalleryList/GalleryList';
+import GalleryItem from '../GalleryItem/GalleryItem';
 
 function App() {
   let [galleryArray, setGalleryArray] = useState([]);
@@ -31,16 +32,7 @@ function App() {
       <div className="App">
         <Header />
         <div className="row">
-        <GalleryList galleryArray={galleryArray}/>
-            return (
-              <div>
-                <img key={galleryItem.id} src={galleryItem.path}></img>
-                <br />
-                <button onClick={() => likeImage()}>
-                  <i className="fa fa-heart-o"></i>
-                </button>
-              </div>
-            )    
+        <GalleryList galleryArray={galleryArray} />   
         </div>
       </div>
     );

@@ -47,7 +47,7 @@ If you have suggestions or issues, please email me at [reinschmidtmeaghan@gmail.
 - [X] Create Header component and pass Header via props
 - [X] Add non-functional like button to .map and reformat 
 - [X] Shift .map function and gallery data loop to GalleryList component
-- [ ] 
+- [X] Create GalleryItem component from GalleryList 
 
 
 ### Hints
