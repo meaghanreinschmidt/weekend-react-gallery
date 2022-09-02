@@ -30,10 +30,17 @@ function App() {
         <header className="App-header">
           <h1 className="App-title">Gallery of My Life</h1>
         </header>
-        <p>Gallery goes here</p>
-        <div>
+        <div className="row">
           {galleryArray.map((galleryItem) => {
-            return <img key={galleryItem.id} src={galleryItem.path}></img>
+            return (
+              <div>
+                <img key={galleryItem.id} src={galleryItem.path}></img>
+                <br />
+                <button onClick={() => likeImage()}>
+                  <i className="fa fa-heart-o"></i>
+                </button>
+              </div>
+            )
           })
           }
         </div>

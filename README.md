@@ -44,7 +44,7 @@ If you have suggestions or issues, please email me at [reinschmidtmeaghan@gmail.
 
 ### Functionality
 - [X] Create a GET function and display images to DOM
-
+- [X] Add non-functional like button to .map and reformat 
 
 
 ### Hints
