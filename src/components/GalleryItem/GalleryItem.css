@@ -1,0 +1,28 @@
+.image-div {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.click {
+    cursor: pointer;
+    background-color: #222;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    margin: 10px 10px;
+    cursor: pointer;
+}
+
+.like-button {
+    background-color: #222;
+    color: red;
+}
+
+p {
+    color: red;
+}
+
+/* .click:hover {
+    opacity: 0.3;
+} */

@@ -49,7 +49,8 @@ If you have suggestions or issues, please email me at [reinschmidtmeaghan@gmail.
 - [X] Shift .map function and gallery data loop to GalleryList component
 - [X] Create GalleryItem component from GalleryList 
 - [X] Set toggle for image and description
-- [ ] Fix likeImage button on page
+- [X] Fix likeImage button on page
+- [ ] Add likeImage button functionality
 
 
 ### Hints
