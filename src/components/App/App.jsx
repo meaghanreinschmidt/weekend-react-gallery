@@ -31,11 +31,7 @@ function App() {
       <div className="App">
         <Header />
         <div className="row">
-        <GalleryList 
-          galleryArray={galleryArray}
-          galleryItem={galleryItem}
-          galleryItems={galleryItems}
-        />
+        <GalleryList galleryArray={galleryArray}/>
             return (
               <div>
                 <img key={galleryItem.id} src={galleryItem.path}></img>

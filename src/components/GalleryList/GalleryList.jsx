@@ -1,9 +1,12 @@
 import React from 'react';
+import GalleryItem from '../GalleryItem/GalleryItem';
 
-function GalleryList({galleryArray, galleryItem, galleryItems}) {
+function GalleryList({galleryArray}) {
     galleryArray.map((galleryItem) => {
         return (
-            {galleryItems}
+            <div>
+                <GalleryItem galleryItem={galleryItem}/>
+            </div>
         )
     })
 }
