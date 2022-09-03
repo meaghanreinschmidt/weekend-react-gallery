@@ -4,6 +4,7 @@ import './GalleryItem.css'
 function GalleryItem({ galleryItem, likeImage }) {
     const [toggle, setToggle] = useState(false);
     const [isHovering, setIsHovering] = useState(false);
+    const [counter, setCounter] = useState(0);
 
     const handleMouseOver = () => {
         setIsHovering(true);
@@ -12,35 +13,29 @@ function GalleryItem({ galleryItem, likeImage }) {
     const handleMouseOut = () => {
         setIsHovering(false);
     }
-    
-    return <div>
-        {
-            toggle ? (
-                <div></div>
-            ) : (
-                <div></div>
-            )
-        }
 
-    <button className="click" onClick={() => setToggle(!toggle)}>
-        {toggle ? 
-            <span>{galleryItem.description}</span>
-            : 
-            <div className="image-div">
-                <img key={galleryItem.id} src={galleryItem.path} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} />
-                <br />
-                {isHovering && <p>CLICK ME!</p>}
-                <br/>
-            </div>
-            
-        }
-    </button>
-    
-    <div>
-        <button className="like-button" onClick={() => likeImage()}>
-            <i className="fa fa-heart-o"></i>
+    return <div>
+
+        <button className="click" onClick={() => setToggle(!toggle)}>
+            {toggle ?
+                <span>{galleryItem.description}</span>
+                :
+                <div className="image-div">
+                    <img key={galleryItem.id} src={galleryItem.path} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} />
+                    <br />
+                    {isHovering && <p>CLICK ME!</p>}
+                    <br />
+                </div>
+            }
         </button>
-    </div>
+
+        <div>
+            <button className="like-button" onClick={() => setCounter(counter + 1)}>
+                <i className="fa fa-heart-o"></i>
+            </button>
+            <br />
+            <span>Likes: {counter}</span>
+        </div>
 
     </div>
 }

@@ -50,7 +50,7 @@ If you have suggestions or issues, please email me at [reinschmidtmeaghan@gmail.
 - [X] Create GalleryItem component from GalleryList 
 - [X] Set toggle for image and description
 - [X] Fix likeImage button on page
-- [ ] Add likeImage button functionality
+- [X] Add likeImage button functionality
 
 
 ### Hints
