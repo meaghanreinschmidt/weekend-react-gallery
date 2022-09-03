@@ -49,9 +49,8 @@ If you have suggestions or issues, please email me at [reinschmidtmeaghan@gmail.
 - [X] Shift .map function and gallery data loop to GalleryList component
 - [X] Create GalleryItem component from GalleryList 
 - [X] Set toggle for image and description
-- [X] Fix likeImage button on page
-- [X] Add likeImage button functionality
-- [X] Add PUT request to App.jsx
+- [X] Add updateLikes button in GalleryItem
+- [X] Add PUT request to App.jsx for updateLikes
 
 
 ### Hints

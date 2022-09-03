@@ -29,36 +29,14 @@ function GalleryItem({ galleryItem, updateLikes }) {
             }
         </button>
         <br />
-
         <button onClick={() => updateLikes(galleryItem.id)}>
             LIKE
-        </button>
-
-        {/* <button className="like-button" onClick={() => setToggleTwo(!toggleTwo)}>
-            {toggleTwo ?
-                <div>
-                    <div className="unlike-button" onClick={() => setCounter(counter - 1)}>
-                        Unlike
-                    </div>
-                </div>
-                :
-                <div>
-                    <div>
-                        <div className="like-button" onClick={() => setCounter(counter + 1)}>
-                            <i className="fa fa-heart-o"></i>
-                        </div>
-                    </div>
-                </div>
-            }
-        </button> */}
-        
+        </button>        
 
         <div>
             <p className="like-counter">Likes: {galleryItem.likes}</p>
         </div>
-
         
-
     </div>
 }
 
