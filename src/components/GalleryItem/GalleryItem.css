@@ -23,6 +23,10 @@ p {
     color: red;
 }
 
+.like-counter {
+    color: black;
+}
+
 /* .click:hover {
     opacity: 0.3;
 } */

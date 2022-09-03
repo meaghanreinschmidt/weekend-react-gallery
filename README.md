@@ -43,7 +43,7 @@ If you have suggestions or issues, please email me at [reinschmidtmeaghan@gmail.
 - [X] Add image info to galleryItems array
 
 ### Functionality
-- [X] Create a GET function and display images to DOM
+- [X] Create a GET request and display images to DOM
 - [X] Create Header component and pass Header via props
 - [X] Add non-functional like button to .map and reformat 
 - [X] Shift .map function and gallery data loop to GalleryList component
@@ -51,6 +51,7 @@ If you have suggestions or issues, please email me at [reinschmidtmeaghan@gmail.
 - [X] Set toggle for image and description
 - [X] Fix likeImage button on page
 - [X] Add likeImage button functionality
+- [X] Add PUT request to App.jsx
 
 
 ### Hints

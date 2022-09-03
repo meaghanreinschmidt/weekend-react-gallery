@@ -28,11 +28,27 @@ function App() {
     })
   }
 
+  // PUT request 
+  const updateLikes = (galleryId) => {
+    axios({
+      method: 'PUT',
+      url: `/gallery/like/${galleryId}`,
+    }).then(response => {
+      fetchGallery();
+    }).catch((error) => {
+      console.log(error);
+      alert('Something went wrong!')
+    })
+  }
+
     return (
       <div className="App">
         <Header />
         <div className="row">
-        <GalleryList galleryArray={galleryArray} />   
+        <GalleryList 
+          galleryArray={galleryArray}
+          updateLikes={updateLikes}
+        />   
         </div>
       </div>
     );
