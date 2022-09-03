@@ -52,17 +52,7 @@ If you have suggestions or issues, please email me at [reinschmidtmeaghan@gmail.
 - [X] Add updateLikes button in GalleryItem
 - [X] Add PUT request to App.jsx for updateLikes
 
-
-### Hints
-- Start with what works!
-- Start with App files and use props from there. 
-- Some components will have varialbles.some will not 
-- Header will not need a state
-
-- Use individual state for each image?
-- Use toggle for images
-
-- App.jsx --> ListItem.jsx (for each gallery items)
-  - Passing props from App.jsx to each ListItem.jsx
+### Stretch Mode Goals
+- [ ] Add styling with MUI
 
 
