@@ -1,7 +1,20 @@
-.image-div {
-    width: 300px;
-    height: 300px;
-    margin: 0 auto;
+.card-content {
+    border: 1px solid #222;
+}
+
+
+.gallery-image {
+    align-self: center;
+}
+
+.gallery-description {
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    background-color:#222;
+    width: 260px;
 }
 
 .click {
@@ -9,24 +22,33 @@
     background-color: #222;
     color: white;
     font-size: 15px;
-    border-radius: 5px;
-    margin: 10px 10px;
-    cursor: pointer;
-}
-
-.like-button {
-    background-color: #222;
-    color: red;
+    display: flex;
 }
 
 p {
-    color: red;
+    color: white;
+}
+
+.card-actions {
+    align-items: center;
+    justify-content: center;
+
 }
 
 .like-counter {
     color: black;
 }
 
-/* .click:hover {
-    opacity: 0.3;
-} */
+.like-button {
+    display: flex;
+    color: red;
+}
+
+.likes {
+    color: #222;
+    justify-content: center;
+}
+
+img {
+    margin: 30px;
+  }

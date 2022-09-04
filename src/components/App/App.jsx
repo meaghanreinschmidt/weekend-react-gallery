@@ -4,6 +4,7 @@ import './App.css';
 import Header from '../Header/Header';
 import GalleryList from '../GalleryList/GalleryList';
 import GalleryItem from '../GalleryItem/GalleryItem';
+import Container from '@mui/material/Container';
 
 function App() {
   let [galleryArray, setGalleryArray] = useState([]);
@@ -42,15 +43,13 @@ function App() {
   }
 
     return (
-      <div className="App">
+      <Container className="App">
         <Header />
-        <div className="row">
         <GalleryList 
           galleryArray={galleryArray}
           updateLikes={updateLikes}
         />   
-        </div>
-      </div>
+      </Container>
     );
 }
 

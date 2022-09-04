@@ -1,6 +1,9 @@
+body {
+  background-color: #222;
+}
+
 .App {
   text-align: center;
-  background-color: rgb(83, 82, 82);
 }
 
 .App-header {
@@ -20,10 +23,5 @@
   display: flex;
   flex-wrap: wrap;
   padding: 4px;
-}
-
-img {
-  margin: 30px;
-  margin-bottom: 10px;
 }
 
