@@ -1,3 +1,7 @@
+body {
+  background-color: #222;
+}
+
 .App {
   text-align: center;
 }
@@ -11,5 +15,13 @@
 
 .App-title {
   font-size: 1.5em;
+}
+
+.row {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4px;
 }
 
