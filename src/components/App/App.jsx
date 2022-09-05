@@ -3,7 +3,6 @@ import React, {useState, useEffect } from 'react';
 import './App.css';
 import Header from '../Header/Header';
 import GalleryList from '../GalleryList/GalleryList';
-import GalleryItem from '../GalleryItem/GalleryItem';
 import Container from '@mui/material/Container';
 
 function App() {

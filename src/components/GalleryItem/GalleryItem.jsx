@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import './GalleryItem.css'
-
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -26,13 +25,13 @@ function GalleryItem({ galleryItem, updateLikes }) {
                         }
                     </Button>
                     <br />
-                    <CardActions className="card-actions">
+                    <CardActions className="card-like-button">
                         <Button onClick={() => updateLikes(galleryItem.id)}>
                             <FavoriteIcon className="like-button"></FavoriteIcon>
                         </Button>
-                    </CardActions>
-                    <CardActions className="likes">
-                        <Typography className="like-counter">Likes: {galleryItem.likes}</Typography>
+                    {/* </CardActions> */}
+                    {/* <CardActions className="card-likes"> */}
+                        <Typography className="like-counter">{galleryItem.likes} people like this.</Typography>
                     </CardActions>
                 </CardContent>
             </Card>
