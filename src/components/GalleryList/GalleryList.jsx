@@ -2,7 +2,7 @@ import React from 'react';
 import GalleryItem from '../GalleryItem/GalleryItem';
 import Grid from '@mui/material/Grid';
 
-function GalleryList({ galleryArray, updateLikes, deleteItem }) {
+function GalleryList({ galleryArray, updateLikes, deleteItem}) {
     return (
         <Grid container spacing={2}>
             {

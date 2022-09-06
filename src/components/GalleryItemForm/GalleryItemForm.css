@@ -1,0 +1,7 @@
+.add-photo {
+    cursor: pointer;
+    background-color: #222;
+    color: white;
+    font-size: 15px;
+    display: flex;
+}

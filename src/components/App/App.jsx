@@ -2,11 +2,16 @@ import axios from 'axios';
 import React, {useState, useEffect } from 'react';
 import './App.css';
 import Header from '../Header/Header';
+import GalleryItemForm from '../GalleryItemForm/GalleryItemForm';
 import GalleryList from '../GalleryList/GalleryList';
 import Container from '@mui/material/Container';
 
 function App() {
   let [galleryArray, setGalleryArray] = useState([]);
+  let [galleryItemPath, setGalleryItemPath] = useState('');
+  let [galleryItemTitle, setGalleryItemTitle] = useState('');
+  let [galleryItemDescription, setGalleryItemDescription] = useState('');
+  let [galleryItemLikes, setGalleryItemLikes] = useState(0);
 
   // This gets called when the page loads. 
   useEffect(() => {
@@ -54,9 +59,47 @@ function App() {
     })
   }
 
+  // POST request
+  const addGalleryItem = (evt) => {
+    evt.preventDefault();
+    axios({
+      method: 'POST',
+      url: '/gallery',
+      data: {
+        path: galleryItemPath,
+        title: galleryItemTitle,
+        description: galleryItemDescription,
+        likes: galleryItemLikes
+      }
+    }).then(response => {
+      // Clear form inputs
+      setGalleryItemPath('');
+      setGalleryItemTitle('');
+      setGalleryItemDescription('');
+      setGalleryItemLikes('');
+      // Fetch Gallery 
+      fetchGallery();
+    }).catch(error => {
+      console.log(error);
+      alert('Something went wrong!');
+    });
+  }
+
     return (
       <Container className="App">
         <Header />
+        <GalleryItemForm 
+        addGalleryItem={addGalleryItem} 
+        galleryItemPath={galleryItemPath}
+        setGalleryItemPath={setGalleryItemPath}
+        galleryItemTitle={galleryItemTitle}
+        setGalleryItemTitle={setGalleryItemTitle}
+        galleryItemDescription={galleryItemDescription}
+        setGalleryItemDescription={setGalleryItemDescription}
+        galleryItemLikes={galleryItemLikes}
+        setGalleryItemLikes={setGalleryItemLikes}
+        />
+        <br />
         <GalleryList 
           galleryArray={galleryArray}
           updateLikes={updateLikes}

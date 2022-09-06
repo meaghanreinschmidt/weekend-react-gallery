@@ -57,6 +57,6 @@ If you have suggestions or issues, please email me at [reinschmidtmeaghan@gmail.
 - [X] Add styling with MUI
 - [X] Move Data to Database
 - [X] Add Delete functionality
-- [ ] Add form to POST new gallery item
+- [X] Add form to POST new gallery item
 
 
