@@ -8,8 +8,9 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import CardMedia from '@mui/material/CardMedia';
 import FavoriteIcon from '@mui/icons-material/Favorite';
+import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 
-function GalleryItem({ galleryItem, updateLikes }) {
+function GalleryItem({ galleryItem, updateLikes, deleteItem }) {
     const [toggle, setToggle] = useState(false);
 
 
@@ -29,7 +30,10 @@ function GalleryItem({ galleryItem, updateLikes }) {
                         <Button onClick={() => updateLikes(galleryItem.id)}>
                             <FavoriteIcon className="like-button"></FavoriteIcon>
                         </Button>
-                        <Typography className="like-counter">{galleryItem.likes} people like this!</Typography>
+                        <Typography className="like-counter" fontSize='10px'>{galleryItem.likes} likes!</Typography>
+                        <Button onClick={() => deleteItem(galleryItem.id)}>
+                            <DeleteOutlineIcon className="delete-button"></DeleteOutlineIcon>
+                        </Button>
                     </CardActions>
                 </CardContent>
             </Card>

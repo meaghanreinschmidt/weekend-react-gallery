@@ -56,7 +56,7 @@ If you have suggestions or issues, please email me at [reinschmidtmeaghan@gmail.
 ### Stretch Mode Goals
 - [X] Add styling with MUI
 - [X] Move Data to Database
-- [ ] Add Delete functionality
+- [X] Add Delete functionality
 - [ ] Add form to POST new gallery item
 
 
