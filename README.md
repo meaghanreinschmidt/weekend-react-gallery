@@ -1,6 +1,6 @@
 # React Gallery
 
-## Descripton
+## Description
 
 *Duration: 2 Weeks*
 
