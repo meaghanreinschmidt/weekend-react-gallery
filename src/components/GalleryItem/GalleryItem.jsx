@@ -29,9 +29,7 @@ function GalleryItem({ galleryItem, updateLikes }) {
                         <Button onClick={() => updateLikes(galleryItem.id)}>
                             <FavoriteIcon className="like-button"></FavoriteIcon>
                         </Button>
-                    {/* </CardActions> */}
-                    {/* <CardActions className="card-likes"> */}
-                        <Typography className="like-counter">{galleryItem.likes} people like this.</Typography>
+                        <Typography className="like-counter">{galleryItem.likes} people like this!</Typography>
                     </CardActions>
                 </CardContent>
             </Card>
