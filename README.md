@@ -17,9 +17,10 @@ Here are a few of my favorite things! Don't forget to click the like button!
 -Other-
 
 ## Installation
-1. Run `npm install` in your terminal
+1. Create a database name `react-gallery`
+2. Run `npm install` in your terminal
 2. Run `npm run server` in one terminal tab
-3. Run `npm run client` in another terminal tab
+4. Run `npm run client` in another terminal tab
 
 ## Usage
 
@@ -53,6 +54,9 @@ If you have suggestions or issues, please email me at [reinschmidtmeaghan@gmail.
 - [X] Add PUT request to App.jsx for updateLikes
 
 ### Stretch Mode Goals
-- [ ] Add styling with MUI
+- [X] Add styling with MUI
+- [X] Move Data to Database
+- [ ] Add Delete functionality
+- [ ] Add form to POST new gallery item
 
 
