@@ -67,3 +67,7 @@ p {
 img {
     margin: 30px;
   }
+
+.delete-button {
+    color: white;
+}

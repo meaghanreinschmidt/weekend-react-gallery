@@ -10,7 +10,7 @@ import CardMedia from '@mui/material/CardMedia';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 
-function GalleryItem({ galleryItem, updateLikes, deleteItem }) {
+function GalleryItem({ galleryItem, updateLikes, deleteItem}) {
     const [toggle, setToggle] = useState(false);
 
 

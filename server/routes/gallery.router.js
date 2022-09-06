@@ -34,7 +34,7 @@ router.get('/', (req, res) => {
 
 // DELETE Route
 router.delete('/:id', (req, res) => {
-    console.log('In Delete Request');
+    // console.log('In Delete Request');
     let queryText = 'DELETE FROM "galleryList" WHERE "id" = $1';
 
     pool.query(queryText, [req.params.id]).then((result) => {
@@ -42,7 +42,20 @@ router.delete('/:id', (req, res) => {
     }).catch((error) => {
         console.log(error);
         res.sendStatus(500);
-    })
-})
+    });
+});
+
+// POST Route
+router.post('/', (req, res) => {
+    console.log('POST req.body', req.body);
+    let queryText = 'INSERT INTO "galleryList" ("path", "title", "description", "likes") VALUES ($1, $2, $3, $4);'
+    pool.query(queryText, [req.body.path, req.body.title, req.body.description, req.body.likes])
+    .then((result) => {
+        res.sendStatus(200);
+    }).catch((error) => {
+        console.log(error);
+        res.sendStatus(500);
+    });
+});
 
 module.exports = router;
