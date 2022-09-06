@@ -76,7 +76,6 @@ function App() {
       setGalleryItemPath('');
       setGalleryItemTitle('');
       setGalleryItemDescription('');
-      setGalleryItemLikes('');
       // Fetch Gallery 
       fetchGallery();
     }).catch(error => {
