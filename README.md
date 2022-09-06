@@ -42,6 +42,7 @@ Here are a few of my favorite things! Don't forget to click the like button!
 9. ![image](https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=mui&logoColor=white)
    
 ## License
+[MIT](https://choosealicense.com/licenses/mit/)
 
 ## Acknowledgment 
 
