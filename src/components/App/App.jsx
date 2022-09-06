@@ -41,12 +41,26 @@ function App() {
     })
   }
 
+  // DELETE request
+  const deleteItem = (galleryId) => {
+    axios({
+      method: 'DELETE',
+      url: `/gallery/${galleryId}`
+    }).then((response) => {
+      fetchGallery();
+    }).catch((error) => {
+      console.log(error);
+      alert('Something went wrong!')
+    })
+  }
+
     return (
       <Container className="App">
         <Header />
         <GalleryList 
           galleryArray={galleryArray}
           updateLikes={updateLikes}
+          deleteItem={deleteItem}
         />   
       </Container>
     );
