@@ -11,10 +11,11 @@
     height: 260px;
     display: flex;
     justify-content: center;
+    align-self: center;
     align-content: center;
     flex-direction: column;
     background-color:#222;
-    width: 260px;
+    width: 223px;
 }
 
 .click {
